@@ -3,7 +3,7 @@ import { useStore } from '../store/useStore';
 import { Tab } from '@headlessui/react';
 
 export const Details: React.FC = () => {
-  const { successPlan, isExternalView } = useStore();
+  const { successPlan } = useStore();
 
   if (!successPlan) return null;
 
