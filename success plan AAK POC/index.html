@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Success Plan — Static Preview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji"; }
+  </style>
+</head>
+<body class="min-h-screen bg-neutral-50 text-neutral-900">
+  <!-- Top bar -->
+  <header class="sticky top-0 z-30 border-b bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-6 py-3">
+      <nav class="flex items-center gap-3 text-sm text-neutral-600">
+        <span class="text-neutral-400">Customers</span>
+        <span>/</span>
+        <span>Acme Corp</span>
+        <span>/</span>
+        <span class="font-medium text-neutral-900">Success Plan</span>
+      </nav>
+      <div class="flex items-center gap-3">
+        <label class="flex items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1.5 text-xs text-neutral-600 select-none">
+          External view
+          <input type="checkbox" class="peer sr-only">
+          <span class="inline-block h-4 w-8 rounded-full bg-neutral-200 relative after:absolute after:top-0.5 after:left-0.5 after:h-3 after:w-3 after:rounded-full after:bg-white after:transition-all peer-checked:bg-neutral-900 peer-checked:after:left-4"></span>
+        </label>
+        <button class="rounded-full border border-neutral-200 bg-white px-3 py-1.5 text-sm">Share</button>
+        <div class="flex items-center gap-1">
+          <button class="rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white">Export</button>
+          <button class="h-9 w-9 rounded-full border border-neutral-200 bg-white text-neutral-700">▾</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Meta header -->
+  <section class="mx-auto max-w-[1200px] px-6 pt-6">
+    <div class="grid grid-cols-12 gap-6">
+      <div class="col-span-12 xl:col-span-8">
+        <div class="rounded-2xl border border-neutral-200 bg-white">
+          <div class="flex items-center justify-between px-6 pt-5">
+            <h1 class="text-2xl">Acme — FY25 Success Plan</h1>
+            <div class="flex items-center gap-3 text-sm text-neutral-600">
+              <div class="flex items-center gap-2">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                Next review: Sep 30, 2025
+              </div>
+              <span class="h-4 w-px bg-neutral-200"></span>
+              <div class="flex items-center gap-2">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Last updated: Aug 15, 2025
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-4 px-6 pb-6 pt-3 md:grid-cols-3">
+            <div class="rounded-xl border border-neutral-200 p-4">
+              <div class="flex items-center gap-2 text-sm text-neutral-600">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 11a4 4 0 1 0-8 0"/><path d="M12 15a7 7 0 0 0-7 7h14a7 7 0 0 0-7-7Z"/></svg>
+                Owner
+              </div>
+              <div class="mt-1 font-medium">Jordan Lee</div>
+            </div>
+            <div class="rounded-xl border border-neutral-200 p-4">
+              <div class="flex items-center gap-2 text-sm text-neutral-600">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 21V7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v12"/><path d="M16 13h.01M8 13h.01M12 13h.01M12 17h.01M8 17h.01M16 17h.01"/></svg>
+                Segment
+              </div>
+              <div class="mt-1 font-medium">Enterprise • Retail</div>
+            </div>
+            <div class="rounded-xl border border-neutral-200 p-4">
+              <div class="flex items-center gap-2 text-sm text-neutral-600">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 20a8 8 0 1 0-8-8"/><path d="M12 12V7"/></svg>
+                Health
+              </div>
+              <div class="mt-2 grid grid-cols-3 gap-2 text-sm">
+                <button class="rounded-lg border border-emerald-300 bg-emerald-50 px-2 py-1">On track</button>
+                <button class="rounded-lg border px-2 py-1">Needs attention</button>
+                <button class="rounded-lg border px-2 py-1">At risk</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="col-span-12 xl:col-span-4">
+        <div class="rounded-2xl border border-neutral-200 bg-white">
+          <div class="px-6 pt-5">
+            <h2 class="text-lg">Change summary</h2>
+          </div>
+          <div class="flex flex-wrap gap-2 px-6 pb-5 pt-2 text-sm">
+            <span class="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-emerald-700">+3 objectives completed</span>
+            <span class="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-amber-700">1 risk added</span>
+            <span class="rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-blue-700">2 KPIs updated</span>
+            <div class="mt-2 w-full text-xs text-neutral-500">Since last export • Last exported Aug 10, 2025</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="mx-auto max-w-[1200px] px-6 py-6">
+    <div class="grid grid-cols-12 gap-6">
+      <!-- Left pane -->
+      <section class="col-span-12 space-y-6 xl:col-span-7">
+        <div class="rounded-2xl border border-neutral-200 bg-white">
+          <div class="flex items-center justify-between px-6 pt-5">
+            <h2 class="text-lg">Objectives</h2>
+            <div class="flex items-center gap-2">
+              <div class="relative">
+                <svg class="absolute left-2 top-2.5 h-4 w-4 text-neutral-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input placeholder="Search" class="w-40 rounded-md border border-neutral-200 bg-white pl-8 pr-3 py-2 text-sm" />
+              </div>
+              <select class="w-36 rounded-md border border-neutral-200 bg-white px-3 py-2 text-sm">
+                <option>Owner</option>
+                <option>Any owner</option>
+                <option>Jordan Lee</option>
+                <option>Kai Sun</option>
+              </select>
+              <select class="w-36 rounded-md border border-neutral-200 bg-white px-3 py-2 text-sm">
+                <option>Status</option>
+                <option>All</option>
+                <option>On track</option>
+                <option>Needs attention</option>
+                <option>At risk</option>
+              </select>
+              <button class="rounded-md border border-neutral-200 bg-white px-3 py-2 text-sm">Filters</button>
+              <button class="rounded-full bg-neutral-900 px-4 py-2 text-sm font-medium text-white">Add objective</button>
+            </div>
+          </div>
+          <div class="px-6 pb-5 pt-3">
+            <div class="overflow-hidden rounded-xl border border-neutral-200">
+              <table class="w-full text-sm">
+                <thead class="bg-neutral-50 text-left text-neutral-600">
+                  <tr>
+                    <th class="w-[36px] p-3"><input type="checkbox" /></th>
+                    <th class="p-3">Objective</th>
+                    <th class="w-[120px] p-3">Owner</th>
+                    <th class="w-[120px] p-3">Due</th>
+                    <th class="w-[160px] p-3">Status</th>
+                    <th class="w-[140px] p-3">Progress</th>
+                    <th class="w-[40px] p-3"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Row 1 -->
+                  <tr class="border-t hover:bg-neutral-50">
+                    <td class="p-3"><input type="checkbox" /></td>
+                    <td class="p-3">
+                      Launch self-serve onboarding flow
+                      <div class="mt-1 text-xs text-neutral-500">KPIs: Activation <span class="font-medium text-neutral-700">+12%</span> • Time-to-value <span class="font-medium text-neutral-700">-20%</span></div>
+                    </td>
+                    <td class="p-3">
+                      <div class="flex items-center gap-2">
+                        <div class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-100 text-xs">JL</div>
+                        <span>Jordan</span>
+                      </div>
+                    </td>
+                    <td class="p-3">Oct 15</td>
+                    <td class="p-3">
+                      <span class="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">
+                        On track
+                      </span>
+                    </td>
+                    <td class="p-3">
+                      <div class="flex items-center gap-2">
+                        <div class="h-2 w-24 overflow-hidden rounded-full bg-neutral-200">
+                          <div class="h-2 bg-neutral-900" style="width:62%"></div>
+                        </div>
+                        <span class="text-xs text-neutral-600">62%</span>
+                      </div>
+                    </td>
+                    <td class="p-3 text-right">⋮</td>
+                  </tr>
+                  <!-- Row 2 -->
+                  <tr class="border-t hover:bg-neutral-50">
+                    <td class="p-3"><input type="checkbox" /></td>
+                    <td class="p-3">
+                      Improve activation email journey
+                      <div class="mt-1 text-xs text-neutral-500">KPIs: Weekly active <span class="font-medium text-neutral-700">+9%</span></div>
+                    </td>
+                    <td class="p-3">
+                      <div class="flex items-center gap-2">
+                        <div class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-100 text-xs">KS</div>
+                        <span>Kai</span>
+                      </div>
+                    </td>
+                    <td class="p-3">Nov 01</td>
+                    <td class="p-3">
+                      <span class="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs text-emerald-700">
+                        On track
+                      </span>
+                    </td>
+                    <td class="p-3">
+                      <div class="flex items-center gap-2">
+                        <div class="h-2 w-24 overflow-hidden rounded-full bg-neutral-200">
+                          <div class="h-2 bg-neutral-900" style="width:35%"></div>
+                        </div>
+                        <span class="text-xs text-neutral-600">35%</span>
+                      </div>
+                    </td>
+                    <td class="p-3 text-right">⋮</td>
+                  </tr>
+                  <!-- Row 3 -->
+                  <tr class="border-t hover:bg-neutral-50">
+                    <td class="p-3"><input type="checkbox" /></td>
+                    <td class="p-3">
+                      Expand analytics dashboards to EMEA
+                      <div class="mt-1 text-xs text-neutral-500">KPIs: Time-to-value <span class="font-medium text-neutral-700">-8%</span></div>
+                    </td>
+                    <td class="p-3">
+                      <div class="flex items-center gap-2">
+                        <div class="flex h-6 w-6 items-center justify-center rounded-full bg-neutral-100 text-xs">JL</div>
+                        <span>Jordan</span>
+                      </div>
+                    </td>
+                    <td class="p-3">Oct 28</td>
+                    <td class="p-3">
+                      <span class="inline-flex items-center gap-1 rounded-full border border-amber-200 bg-amber-50 px-2.5 py-1 text-xs text-amber-700">
+                        Needs attention
+                      </span>
+                    </td>
+                    <td class="p-3">
+                      <div class="flex items-center gap-2">
+                        <div class="h-2 w-24 overflow-hidden rounded-full bg-neutral-200">
+                          <div class="h-2 bg-neutral-900" style="width:78%"></div>
+                        </div>
+                        <span class="text-xs text-neutral-600">78%</span>
+                      </div>
+                    </td>
+                    <td class="p-3 text-right">⋮</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-200 bg-white">
+          <div class="px-6 pt-5">
+            <h2 class="text-lg">Completed</h2>
+          </div>
+          <div class="space-y-3 px-6 pb-5 pt-2 text-sm">
+            <div class="flex items-center justify-between rounded-xl border border-neutral-200 p-3">
+              <div>
+                Migrate analytics to v2 pipelines
+                <div class="text-xs text-neutral-500">Completed Aug 12 • Owner: Kai Sun</div>
+              </div>
+              <span class="rounded-full bg-neutral-100 px-2 py-1 text-neutral-700">98% adoption</span>
+            </div>
+            <div class="flex items-center justify-between rounded-xl border border-neutral-200 p-3">
+              <div>
+                Roll out SSO to all workspaces
+                <div class="text-xs text-neutral-500">Completed Aug 02 • Owner: Jordan Lee</div>
+              </div>
+              <span class="rounded-full bg-neutral-100 px-2 py-1 text-neutral-700">Security</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+          <div class="rounded-2xl border border-neutral-200 bg-white">
+            <div class="px-6 pt-5">
+              <h2 class="text-lg">Mission summary</h2>
+            </div>
+            <div class="px-6 pb-5 pt-2 text-sm text-neutral-700">
+              Drive activation and value realization for the Acme Retail division to support FY25 revenue targets and reduce onboarding time.
+            </div>
+          </div>
+          <div class="rounded-2xl border border-neutral-200 bg-white">
+            <div class="px-6 pt-5">
+              <h2 class="text-lg">Value realized</h2>
+            </div>
+            <div class="grid grid-cols-2 gap-3 px-6 pb-5 pt-2 text-sm">
+              <div class="rounded-xl border border-neutral-200 p-3">
+                <div class="text-neutral-500">Activation rate</div>
+                <div class="mt-1 text-xl font-semibold">+14%</div>
+                <svg viewBox="0 0 100 30" class="h-6 w-full text-neutral-700">
+                  <polyline fill="none" stroke="currentColor" stroke-width="2" points="0,20 15,15 30,18 45,10 60,12 75,8 90,12 100,9" class="opacity-70"/>
+                </svg>
+              </div>
+              <div class="rounded-xl border border-neutral-200 p-3">
+                <div class="text-neutral-500">Time-to-value</div>
+                <div class="mt-1 text-xl font-semibold">-19%</div>
+                <svg viewBox="0 0 100 30" class="h-6 w-full text-neutral-700">
+                  <polyline fill="none" stroke="currentColor" stroke-width="2" points="0,12 15,10 30,14 45,18 60,16 75,20 90,18 100,21" class="opacity-70"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right pane -->
+      <aside class="col-span-12 xl:col-span-5">
+        <div class="rounded-2xl border border-neutral-200 bg-white">
+          <div class="px-6 pt-5">
+            <h2 class="text-lg">Details</h2>
+          </div>
+          <div class="px-6 pb-5 pt-2">
+            <!-- Tabs header (static) -->
+            <div class="grid w-full grid-cols-5 rounded-xl border border-neutral-200 p-1 text-sm">
+              <div class="rounded-lg bg-neutral-100 px-3 py-1.5 text-center">Overview</div>
+              <div class="px-3 py-1.5 text-center text-neutral-500">KPIs</div>
+              <div class="px-3 py-1.5 text-center text-neutral-500">Timeline</div>
+              <div class="px-3 py-1.5 text-center text-neutral-500">Risks</div>
+              <div class="px-3 py-1.5 text-center text-neutral-500">History</div>
+            </div>
+
+            <!-- Overview content -->
+            <div class="mt-4 space-y-4">
+              <div class="rounded-xl border border-neutral-200 p-4">
+                <div class="text-sm text-neutral-600">Stakeholders</div>
+                <div class="mt-2 space-y-3">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <div class="flex h-7 w-7 items-center justify-center rounded-full bg-neutral-100 text-xs">EC</div>
+                      <div>
+                        <div class="text-sm font-medium">Evelyn Chen</div>
+                        <div class="text-xs text-neutral-500">VP Product</div>
+                      </div>
+                    </div>
+                    <span class="rounded-full bg-neutral-100 px-2 py-1 text-neutral-700">RACI: R</span>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <div class="flex h-7 w-7 items-center justify-center rounded-full bg-neutral-100 text-xs">MP</div>
+                      <div>
+                        <div class="text-sm font-medium">Mark Patel</div>
+                        <div class="text-xs text-neutral-500">Head of Data</div>
+                      </div>
+                    </div>
+                    <span class="rounded-full bg-neutral-100 px-2 py-1 text-neutral-700">RACI: A</span>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                      <div class="flex h-7 w-7 items-center justify-center rounded-full bg-neutral-100 text-xs">SG</div>
+                      <div>
+                        <div class="text-sm font-medium">Sofia Gomez</div>
+                        <div class="text-xs text-neutral-500">Program Manager</div>
+                      </div>
+                    </div>
+                    <span class="rounded-full bg-neutral-100 px-2 py-1 text-neutral-700">RACI: C</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-xl border border-neutral-200 p-4">
+                <div class="text-sm text-neutral-600">Products in scope</div>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Core Platform</span>
+                  <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Automation</span>
+                  <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Analytics</span>
+                  <span class="rounded-full bg-neutral-100 px-3 py-1 text-sm text-neutral-700">Integrations</span>
+                </div>
+              </div>
+
+              <div class="rounded-xl border border-neutral-200 p-4">
+                <div class="text-sm text-neutral-600">Next steps</div>
+                <ol class="mt-2 list-decimal space-y-1 pl-5 text-sm">
+                  <li>Finalize onboarding KPI targets</li>
+                  <li>Confirm GTM launch timeline with Product</li>
+                  <li>Schedule QBR week of Oct 7</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Report builder -->
+        <div class="mt-6 rounded-2xl border border-neutral-200 bg-white">
+          <div class="flex items-center justify-between px-6 pt-5">
+            <h2 class="text-lg">Report builder</h2>
+            <span class="rounded-full bg-neutral-100 px-2 py-1 text-neutral-700 text-sm">Preview</span>
+          </div>
+          <div class="grid grid-cols-1 gap-4 px-6 pb-6 pt-3 md:grid-cols-2">
+            <div class="space-y-3">
+              <div class="rounded-xl border border-neutral-200 p-3">
+                <label class="text-sm">Preset</label>
+                <select class="mt-1 w-full rounded-md border border-neutral-200 bg-white px-3 py-2 text-sm">
+                  <option>QBR</option>
+                  <option>EBR</option>
+                  <option>Implementation</option>
+                </select>
+              </div>
+              <div class="rounded-xl border border-neutral-200 p-3">
+                <label class="text-sm">Include sections</label>
+                <div class="mt-2 space-y-2 text-sm">
+                  <label class="flex items-center gap-2"><input type="checkbox"> Cover page</label>
+                  <label class="flex items-center gap-2"><input type="checkbox"> Executive summary</label>
+                  <label class="flex items-center gap-2"><input type="checkbox"> Objectives</label>
+                  <label class="flex items-center gap-2"><input type="checkbox"> KPI snapshot</label>
+                  <label class="flex items-center gap-2"><input type="checkbox"> Timeline</label>
+                  <label class="flex items-center gap-2"><input type="checkbox"> Risks</label>
+                  <label class="flex items-center gap-2"><input type="checkbox"> Next steps</label>
+                  <label class="flex items-center gap-2"><input type="checkbox"> Appendix</label>
+                </div>
+              </div>
+              <div class="rounded-xl border border-neutral-200 p-3">
+                <div class="flex items-center justify-between">
+                  <label class="text-sm">Redact internal notes</label>
+                  <input type="checkbox" />
+                </div>
+              </div>
+              <button class="w-full rounded-md bg-neutral-900 px-4 py-2 text-sm font-medium text-white">Export PDF</button>
+            </div>
+            <div class="rounded-xl border border-neutral-200 p-4">
+              <div class="text-sm text-neutral-600">PDF preview</div>
+              <div class="mt-2 space-y-3 rounded-xl border border-neutral-200 bg-white p-4">
+                <div class="h-8 w-3/4 rounded bg-neutral-100"></div>
+                <div class="space-y-2">
+                  <div class="h-3 w-full rounded bg-neutral-100"></div>
+                  <div class="h-3 w-full rounded bg-neutral-100"></div>
+                  <div class="h-3 w-full rounded bg-neutral-100"></div>
+                  <div class="h-3 w-full rounded bg-neutral-100"></div>
+                  <div class="h-3 w-full rounded bg-neutral-100"></div>
+                </div>
+                <div class="my-2 h-px w-full bg-neutral-200"></div>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="h-16 rounded bg-neutral-100"></div>
+                  <div class="h-16 rounded bg-neutral-100"></div>
+                  <div class="h-16 rounded bg-neutral-100"></div>
+                  <div class="h-16 rounded bg-neutral-100"></div>
+                </div>
+                <div class="my-2 h-px w-full bg-neutral-200"></div>
+                <div class="space-y-2">
+                  <div class="h-3 w-5/6 rounded bg-neutral-100"></div>
+                  <div class="h-3 w-5/6 rounded bg-neutral-100"></div>
+                  <div class="h-3 w-5/6 rounded bg-neutral-100"></div>
+                </div>
+                <div class="mt-4 text-right text-xs text-neutral-500">Page 1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="mx-auto max-w-[1200px] px-6 py-10 text-xs text-neutral-500">
+    Static preview • Drag-and-drop this index.html to Netlify
+  </footer>
+</body>
+</html>
