@@ -2,7 +2,7 @@ import React from 'react';
 import { useStore } from '../store/useStore';
 
 export const InfoCards: React.FC = () => {
-  const { successPlan, isExternalView } = useStore();
+  const { successPlan } = useStore();
 
   if (!successPlan) return null;
 

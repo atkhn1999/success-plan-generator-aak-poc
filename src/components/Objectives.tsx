@@ -6,7 +6,7 @@ import { format } from 'date-fns';
 import { Menu } from '@headlessui/react';
 
 export const Objectives: React.FC = () => {
-  const { successPlan, updateObjective, deleteObjective, completeObjective, isExternalView } = useStore();
+  const { successPlan, isExternalView } = useStore();
   const [search, setSearch] = useState('');
   const [ownerFilter, setOwnerFilter] = useState('Any owner');
   const [statusFilter, setStatusFilter] = useState('All');
@@ -23,28 +23,6 @@ export const Objectives: React.FC = () => {
       return matchesSearch && matchesOwner && matchesStatus;
     });
   }, [successPlan, search, ownerFilter, statusFilter]);
-
-  const getStatusStyle = (status: Status) => {
-    switch (status) {
-      case 'on_track':
-        return 'border-emerald-200 bg-emerald-50 text-emerald-700';
-      case 'needs_attention':
-        return 'border-amber-200 bg-amber-50 text-amber-700';
-      case 'at_risk':
-        return 'border-red-200 bg-red-50 text-red-700';
-    }
-  };
-
-  const getStatusLabel = (status: Status) => {
-    switch (status) {
-      case 'on_track':
-        return 'On track';
-      case 'needs_attention':
-        return 'Needs attention';
-      case 'at_risk':
-        return 'At risk';
-    }
-  };
 
   const handleSelectAll = (checked: boolean) => {
     if (checked) {

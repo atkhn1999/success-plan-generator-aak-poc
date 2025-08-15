@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import { 
   Header, 
   MetaHeader, 
@@ -11,8 +10,6 @@ import {
 import { useStore } from './store/useStore';
 
 function ExternalView() {
-  const { id } = useParams();
-
   useEffect(() => {
     // Set external view mode
     useStore.setState({ isExternalView: true });

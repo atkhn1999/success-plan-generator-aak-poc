@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { useStore } from '../store/useStore';
 import { ReportConfig } from '../types';
 import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
 
 export const ReportBuilder: React.FC = () => {
-  const { successPlan, isExternalView } = useStore();
+  const { successPlan } = useStore();
   const [reportConfig, setReportConfig] = useState<ReportConfig>({
     preset: 'QBR',
     sections: {

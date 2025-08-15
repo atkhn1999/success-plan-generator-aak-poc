@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { SuccessPlan, Objective, Status, Stakeholder, Risk } from '../types';
+import { SuccessPlan, Objective, Stakeholder, Risk } from '../types';
 
 interface Store {
   // Success Plan State

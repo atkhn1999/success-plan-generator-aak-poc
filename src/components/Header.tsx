@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Share2 } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { useStore } from '../store/useStore';
 import { Menu } from '@headlessui/react';
 
